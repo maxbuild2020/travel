@@ -41,7 +41,7 @@ export default {
 
     async function getHomeInfo() {
       // axios.get("/api/index.json?city=" + city.value).then(getHomeInfoSucc);
-      let res = await axios.get("http://localhost:8080/api/index.json?city=" + city)
+      let res = await axios.get("/api/index.json?city=" + city)
       if (res.data.ret && res.data.data) {
         data.swiperList = res.data.data.swiperList
         data.iconList = res.data.data.iconList

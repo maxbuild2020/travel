@@ -30,7 +30,7 @@ export default {
       categoryList: []
     })
     async function getDetailInfo () {
-      const res = await axios.get('http://localhost:8080/api/detail.json')
+      const res = await axios.get('/api/detail.json')
       data.sightName = res.data.data.sightName
       data.bannerImg = res.data.data.bannerImg
       data.gallaryImgs = res.data.data.gallaryImgs

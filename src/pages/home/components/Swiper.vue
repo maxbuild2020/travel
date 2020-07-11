@@ -20,7 +20,7 @@ export default {
     const swiperOption = {
       pagination: '.swiper-pagination',
       loop: true,
-      autoplay: 3000
+      autoplay: 2000
     }
     const showSwiper =  computed(() => props.list.length)
     return {swiperOption, showSwiper}
@@ -30,9 +30,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.wrapper >>> .swiper-pagination-bullet-active{
-    background-color: black;
-}
+
 .wrapper {
   width: 100%;
   height: 0;

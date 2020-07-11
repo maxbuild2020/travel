@@ -45,7 +45,7 @@ function useCityLogic() {
       Cities: {},
   })
   async function getCityinfo () {
-      let res = await axios.get('http://localhost:8080/api/city.json')
+      let res = await axios.get('/api/city.json')
       if (res.data.ret && res.data.data) {
         data.Hotcity = res.data.data.hotCities
         data.Cities = res.data.data.cities

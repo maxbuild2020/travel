@@ -7,7 +7,7 @@
                      <img class="icon-img-content" :src="item.imgUrl">
                 </div>
                 <p class="icon-text">{{item.desc}}</p>
-               </div>
+                </div>
             </swiper-slide>
         </swiper>
     </div>
@@ -22,6 +22,7 @@ export default {
   },
   setup(props) {
     const swiperOption = {
+        pagination: '.swiper-pagination',
         autoplay: false
       }
     const pages = computed(() => {
@@ -43,6 +44,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.wrapper >>> .swiper-pagination-bullet-active{
+    background-color: black;
+}
 .wrapper{
     width: 100%;
     height: 0;
